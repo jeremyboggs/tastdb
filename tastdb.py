@@ -3,7 +3,7 @@ import pandas as pd
 import csv
 
 DATA_CSV = 'tastdb-exp-2016.csv'
-REPORT = 'totals-18thcentury.csv'
+REPORT = 'totals-18century.csv'
 
 df = pd.read_csv(DATA_CSV, dtype={'arrport': str, 'slaarriv':str,'year100':str}, usecols=['arrport','slaarriv','year100'])
 places = pd.read_csv('places.csv',dtype={'code':pd.np.int,'label':str},usecols=['code','label'])
